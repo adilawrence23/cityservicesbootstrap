@@ -12,9 +12,23 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>BariSafai-One Stop Service Solutions</title>
+    <style>
+#loading{
+            position:fixed;
+            width:100%;
+            height:100vh;
+            background:white 
+            url('https://acegif.com/wp-content/uploads/loading-9.gif')
+            no-repeat center;
+            z-index: 9999;
+}
+
+
+</style>
 </head>
 
-<body>
+<body onload="myFunction()">
+  <div id="loading"></div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="/cityservicesbootstrap/">BariSafai</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -256,6 +270,13 @@
             <p class="float-right"><a href="#">Back to top</a></p>
             <p>© 2020-2021 CityServices, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
           </footer>   
+    <script>
+  var preloader = document.getElementById('loading');
+
+  function myFunction(){
+      preloader.style.display = 'none';
+  }
+</script>
 
 
     <!-- Optional JavaScript -->
